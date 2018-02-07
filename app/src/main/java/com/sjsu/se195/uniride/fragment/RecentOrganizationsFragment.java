@@ -11,6 +11,8 @@ public class RecentOrganizationsFragment extends OrganizationListFragment {
 
     public RecentOrganizationsFragment() {}
 
+    //Filters the organization page to show the first 100 existing organizations
+
     @Override
     public Query getQuery(DatabaseReference databaseReference) {
         // [START recent_organizations_query]

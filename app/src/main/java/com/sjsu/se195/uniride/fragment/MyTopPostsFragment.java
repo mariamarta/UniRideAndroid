@@ -7,6 +7,8 @@ public class MyTopPostsFragment extends PostListFragment {
 
     public MyTopPostsFragment() {}
 
+    //Gets all of the posts from user-posts and orders it by its StarCount
+
     @Override
     public Query getQuery(DatabaseReference databaseReference) {
         // [START my_top_posts_query]

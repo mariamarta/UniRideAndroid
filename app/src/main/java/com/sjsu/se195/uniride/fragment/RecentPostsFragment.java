@@ -7,6 +7,9 @@ public class RecentPostsFragment extends PostListFragment {
 
     public RecentPostsFragment() {}
 
+    //Filters the posts page to show the first 100 existing driverOffer / rideRequests posts
+    //Under that tab
+
     @Override
     public Query getQuery(DatabaseReference databaseReference) {
         // [START recent_posts_query]

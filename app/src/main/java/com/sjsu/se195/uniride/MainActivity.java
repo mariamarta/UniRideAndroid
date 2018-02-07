@@ -28,6 +28,9 @@ import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 import com.sjsu.se195.uniride.fragment.RecentOrganizationsFragment;
 
+
+    //"Home page" that displays the two buttons for driveOffers and rideRequests
+
 public class  MainActivity extends BaseActivity {
 
     private static final String TAG = "MainActivity";

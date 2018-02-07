@@ -99,42 +99,6 @@ public abstract class OrganizationListFragment extends Fragment {
         mRecycler.setAdapter(mAdapter);
     }
 
-    // [START post_stars_transaction]
-    /*private void onStarClicked(DatabaseReference organizationRef) { // TODO
-        organizationRef.runTransaction(new Transaction.Handler() { // TODO
-            @Override
-            public Transaction.Result doTransaction(MutableData mutableData) {
-                Organization org = mutableData.getValue(Organization.class); // TODO
-                if (org == null) { // TODO
-                    return Transaction.success(mutableData);
-                }
-
-//                if (p.stars.containsKey(getUid())) { // TODO
-//                    // Unstar the post and remove self from stars
-//                    p.starCount = p.starCount - 1; // TODO
-//                    p.stars.remove(getUid()); // TODO
-//                } else {
-//                    // Star the post and add self to stars
-//                    p.starCount = p.starCount + 1; // TODO
-//                    p.stars.put(getUid(), true); // TODO
-//                }
-
-                // Set value and report transaction success
-                mutableData.setValue(org); // TODO
-                return Transaction.success(mutableData);
-            }
-
-            @Override
-            public void onComplete(DatabaseError databaseError, boolean b,
-                                   DataSnapshot dataSnapshot) {
-                // Transaction completed
-                Log.d(TAG, "orgTransaction:onComplete:" + databaseError); // TODO
-            }
-        });
-    }
-    // [END post_stars_transaction]
-    */
-
     @Override
     public void onDestroy() {
         super.onDestroy();
@@ -144,6 +108,7 @@ public abstract class OrganizationListFragment extends Fragment {
     }
 
     public String getUid() {
+        //Gets the current user's ID
         return FirebaseAuth.getInstance().getCurrentUser().getUid();
     }
 

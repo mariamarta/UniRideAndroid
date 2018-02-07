@@ -7,6 +7,8 @@ public class MyPostsFragment extends PostListFragment {
 
     public MyPostsFragment() {}
 
+    //Gets all of the posts under the current user's ID
+
     @Override
     public Query getQuery(DatabaseReference databaseReference) {
         // All my posts

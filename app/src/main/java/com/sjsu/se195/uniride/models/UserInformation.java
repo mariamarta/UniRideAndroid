@@ -1,4 +1,4 @@
-package com.sjsu.se195.uniride;
+package com.sjsu.se195.uniride.models;
 
 /**
  * Created by Marta on 1/26/18.

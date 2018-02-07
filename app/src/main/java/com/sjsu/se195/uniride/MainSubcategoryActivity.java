@@ -14,6 +14,9 @@ import com.sjsu.se195.uniride.fragment.RecentPostsFragment;
  * Created by akshat on 10/9/17.
  */
 
+    //Depending on the button pressed, the MainSubcategoryActivity will show either the page that lists
+    //either the existing driveOffer and rideRequests posts
+
 public class MainSubcategoryActivity extends MainActivity{
     private boolean postType;
     private ViewPager mViewPager;

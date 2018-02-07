@@ -9,12 +9,14 @@ import com.google.firebase.database.Query;
 
 public class MyOrganizationsFragment extends OrganizationListFragment {
 
+    // Lists every organization the user belongs in -- Under "My Organization tab"
+
     public MyOrganizationsFragment() {}
 
     @Override
     public Query getQuery(DatabaseReference databaseReference) {
-        // All my organizations
+        //Points to the user-organization branch and retrieves all of the data that matches the current user's id
         return databaseReference.child("user-organizations")
-                .child(getUid()); //TODO: investigate why this is returning null organizations in populateViewHolder in Query organizationsQuery in OrganizationListFragment...
+                .child(getUid());
     }
 }

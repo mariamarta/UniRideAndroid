@@ -269,6 +269,8 @@ public class NewPostActivity extends BaseActivity  {
         childUpdates.put("/posts/driveOffers/" + key, postValues);
         childUpdates.put("/user-posts/" + userId + "/driveOffers/" + key, postValues);
 
+
+
         mDatabase.updateChildren(childUpdates);
     }
 
